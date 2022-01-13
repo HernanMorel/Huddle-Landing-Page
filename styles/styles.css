@@ -3,8 +3,8 @@
 /*Reset*/
 /*Body*/
 body {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 html {
@@ -23,11 +23,12 @@ html *::after {
 body {
   height: 100vh;
   font-family: "Poppins", sans-serif;
-  background: #674baf url("/images/bg-desktop.svg");
-  background-size: cover;
+  background-image: url("/images/bg-desktop.svg");
+  background-size: contain;
+  background-position: left;
   background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
+  text-align: center;
+  background-color: #674baf;
 }
 
 .logo {
@@ -40,6 +41,7 @@ body {
   position: absolute;
   top: 12.5em;
   left: 5em;
+  width: 44.5em;
 }
 
 main {
@@ -51,8 +53,47 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  top: 14.5em;
-  right: 5.3125em;
+  top: 12.5em;
+  right: 13.3125em;
   width: 32.5em;
+}
+
+main #header {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #ffff;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+main #slogan {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125em;
+  color: #ffff;
+  font-weight: 200;
+  text-align: left;
+  margin-top: 1.5em;
+  margin-bottom: 0;
+}
+
+main #button {
+  border: 1px solid #ffff;
+  border-radius: 28px;
+  -webkit-box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
+          box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
+  background-color: #ffff;
+  color: #674baf;
+  width: 12.5em;
+  height: 3em;
+  font-size: 1.125em;
+  margin-top: 2em;
+}
+
+main #button:hover {
+  background-color: #e882e8;
+  color: #ffff;
+  border: 1px solid #e882e8;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 /*# sourceMappingURL=styles.css.map */

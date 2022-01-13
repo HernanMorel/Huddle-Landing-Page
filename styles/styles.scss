@@ -19,13 +19,47 @@ $magenta: hsl(300, 69%, 71%);
   position: absolute;
   top: 12.5em;
   left: 5em;
+  width: 44.5em;
 }
 
 main {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 14.5em;
-  right: 5.3125em;
+  top: 12.5em;
+  right: 13.3125em;
   width: 32.5em;
+  #header {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #ffff;
+    text-align: left;
+    margin-bottom: 0;
+  }
+  #slogan {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.125em;
+    color: #ffff;
+    font-weight: 200;
+    text-align: left;
+    margin-top: 1.5em;
+    margin-bottom: 0;
+  }
+  #button {
+    border: 1px solid #ffff;
+    border-radius: 28px;
+    box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
+    background-color: #ffff;
+    color: $violet;
+    width: 12.5em;
+    height: 3em;
+    font-size: 1.125em;
+    margin-top: 2em;
+    &:hover {
+      background-color: $magenta;
+      color: #ffff;
+      border: 1px solid $magenta;
+      transition: 0.3s ease-in-out;
+    }
+  }
 }

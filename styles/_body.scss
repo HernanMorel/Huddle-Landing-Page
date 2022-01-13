@@ -4,11 +4,12 @@ $violet: hsl(257, 40%, 49%);
 body {
   height: 100vh;
   font-family: "Poppins", sans-serif;
-  background: $violet url("/images/bg-desktop.svg");
-  background-size: cover;
+  background-image: url("/images/bg-desktop.svg");
+  background-size: contain;
+  background-position: left;
   background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-  //the background image must be set and colored through CSS if you want more control
-  // positioning and repeat options are required.
+  text-align: center;
+  background-color: $violet;
 }
+//the background image must be set and colored through CSS if you want more control
+// positioning left* in this instance and repeat options are required.

@@ -1,1 +1,58 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+/*Font Import*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+/*Reset*/
+/*Body*/
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html *,
+html *::before,
+html *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: #674baf url("/images/bg-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 4em;
+  left: 5em;
+}
+
+.image-container {
+  position: absolute;
+  top: 12.5em;
+  left: 5em;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 14.5em;
+  right: 5.3125em;
+  width: 32.5em;
+}
+/*# sourceMappingURL=styles.css.map */

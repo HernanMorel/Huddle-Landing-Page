@@ -10,16 +10,18 @@ $violet: hsl(257, 40%, 49%);
 $magenta: hsl(300, 69%, 71%);
 
 .logo {
+  display: flex;
   position: absolute;
   top: 4em;
-  left: 5em;
+  left: 7.6em;
 }
 
 .image-container {
+  display: flex;
   position: absolute;
-  top: 12.5em;
-  left: 5em;
-  width: 44.5em;
+  top: 13em;
+  left: 8em;
+  width: 50%;
 }
 
 main {
@@ -28,7 +30,8 @@ main {
   position: absolute;
   top: 12.5em;
   right: 13.3125em;
-  width: 32.5em;
+  width: 30.5%;
+
   #header {
     font-size: 2.5em;
     font-weight: 600;
@@ -38,7 +41,8 @@ main {
   }
   #slogan {
     font-family: "Open Sans", sans-serif;
-    font-size: 1.125em;
+    font-size: 1.1em;
+    line-height: 1.6875em;
     color: #ffff;
     font-weight: 200;
     text-align: left;
@@ -48,18 +52,44 @@ main {
   #button {
     border: 1px solid #ffff;
     border-radius: 28px;
-    box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
+    box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.158633);
     background-color: #ffff;
     color: $violet;
     width: 12.5em;
-    height: 3em;
+    height: 3.5em;
     font-size: 1.125em;
     margin-top: 2em;
+
     &:hover {
       background-color: $magenta;
       color: #ffff;
       border: 1px solid $magenta;
-      transition: 0.3s ease-in-out;
+      transition: 0.2s ease-in-out;
+    }
+  }
+}
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  position: absolute;
+  top: 49em;
+  right: 11em;
+  width: 15%;
+  #link {
+    width: 100%;
+    color: #ffff;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #header {
+      font-size: 1.5em;
     }
   }
 }

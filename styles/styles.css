@@ -11,6 +11,7 @@ html {
   height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow: auto;
 }
 
 html *,
@@ -29,19 +30,26 @@ body {
   background-repeat: no-repeat;
   text-align: center;
   background-color: #674baf;
+  overflow: auto;
 }
 
 .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
   top: 4em;
-  left: 5em;
+  left: 7.6em;
 }
 
 .image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
-  top: 12.5em;
-  left: 5em;
-  width: 44.5em;
+  top: 13em;
+  left: 8em;
+  width: 50%;
 }
 
 main {
@@ -55,7 +63,7 @@ main {
   position: absolute;
   top: 12.5em;
   right: 13.3125em;
-  width: 32.5em;
+  width: 30.5%;
 }
 
 main #header {
@@ -68,7 +76,8 @@ main #header {
 
 main #slogan {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.125em;
+  font-size: 1.1em;
+  line-height: 1.6875em;
   color: #ffff;
   font-weight: 200;
   text-align: left;
@@ -79,12 +88,12 @@ main #slogan {
 main #button {
   border: 1px solid #ffff;
   border-radius: 28px;
-  -webkit-box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
-          box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
+  -webkit-box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.158633);
+          box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.158633);
   background-color: #ffff;
   color: #674baf;
   width: 12.5em;
-  height: 3em;
+  height: 3.5em;
   font-size: 1.125em;
   margin-top: 2em;
 }
@@ -93,7 +102,47 @@ main #button:hover {
   background-color: #e882e8;
   color: #ffff;
   border: 1px solid #e882e8;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  top: 49em;
+  right: 11em;
+  width: 15%;
+}
+
+.links #link {
+  width: 100%;
+  color: #ffff;
+}
+
+@media only screen and (max-width: 375px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main #header {
+    font-size: 1.5em;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

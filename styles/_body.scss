@@ -10,6 +10,7 @@ body {
   background-repeat: no-repeat;
   text-align: center;
   background-color: $violet;
+  overflow: auto;
 }
 //the background image must be set and colored through CSS if you want more control
 // positioning left* in this instance and repeat options are required.

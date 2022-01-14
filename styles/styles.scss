@@ -73,7 +73,7 @@ main {
   justify-content: space-evenly;
   flex-direction: row;
   position: absolute;
-  top: 49em;
+  top: 47em;
   right: 11em;
   width: 15%;
   #link {
@@ -83,13 +83,56 @@ main {
 }
 
 @media only screen and (max-width: 375px) {
+  body {
+    background-image: url("/images/bg-mobile.svg");
+    background-size: contain;
+    background-position: top;
+  }
+
+  .logo {
+    width: 9em;
+    top: 2em;
+    left: 1.2em;
+    #huddle {
+      width: 100%;
+    }
+  }
+  .image-container {
+    width: 20.5em;
+    top: 7.9375em;
+    left: 2.1em;
+  }
+  #images {
+    width: 90%;
+  }
   main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    width: 17em;
+    left: 36px;
+    top: 396px;
     #header {
+      margin-top: 0;
       font-size: 1.5em;
+      text-align: center;
+    }
+    #slogan {
+      margin-top: 1em;
+      font-size: 1em;
+      text-align: center;
+      line-height: 1.5em;
+    }
+    #button {
+      width: 12.5em;
+      height: 2.5em;
+    }
+  }
+  .links {
+    width: 50%;
+    left: 4.5em;
+    #link {
+      width: 100%;
     }
   }
 }

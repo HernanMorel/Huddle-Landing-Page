@@ -28,7 +28,6 @@ body {
   background-size: contain;
   background-position: left;
   background-repeat: no-repeat;
-  text-align: center;
   background-color: #674baf;
   overflow: auto;
 }
@@ -118,7 +117,7 @@ main #button:hover {
       -ms-flex-direction: row;
           flex-direction: row;
   position: absolute;
-  top: 49em;
+  top: 47em;
   right: 11em;
   width: 15%;
 }
@@ -129,6 +128,27 @@ main #button:hover {
 }
 
 @media only screen and (max-width: 375px) {
+  body {
+    background-image: url("/images/bg-mobile.svg");
+    background-size: contain;
+    background-position: top;
+  }
+  .logo {
+    width: 9em;
+    top: 2em;
+    left: 1.2em;
+  }
+  .logo #huddle {
+    width: 100%;
+  }
+  .image-container {
+    width: 20.5em;
+    top: 7.9375em;
+    left: 2.1em;
+  }
+  #images {
+    width: 90%;
+  }
   main {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -140,9 +160,31 @@ main #button:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 17em;
+    left: 36px;
+    top: 396px;
   }
   main #header {
+    margin-top: 0;
     font-size: 1.5em;
+    text-align: center;
+  }
+  main #slogan {
+    margin-top: 1em;
+    font-size: 1em;
+    text-align: center;
+    line-height: 1.5em;
+  }
+  main #button {
+    width: 12.5em;
+    height: 2.5em;
+  }
+  .links {
+    width: 50%;
+    left: 4.5em;
+  }
+  .links #link {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
